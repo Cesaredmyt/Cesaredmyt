@@ -78,8 +78,8 @@ DUOTONE = {
 }
 # De sombra a luz: el brillo de cada punto decide su color y tamaño.
 PARTICLE_COLORS = {
-    "dark": ["#4f46e5", "#6366f1", "#38bdf8", "#34d399", "#a7f3d0", "#ecfdf5"],
-    "light": ["#818cf8", "#3b82f6", "#0284c7", "#059669", "#047857", "#064e3b"],
+    "dark": ["#3730a3", "#4f46e5", "#38bdf8", "#2dd4bf", "#34d399", "#6ee7b7", "#a7f3d0", "#ecfdf5"],
+    "light": ["#a5b4fc", "#818cf8", "#6366f1", "#3b82f6", "#0284c7", "#059669", "#047857", "#064e3b"],
 }
 LANG_COLORS = {
     "TypeScript": "#3178c6", "JavaScript": "#f1e05a", "Python": "#3572A5", "Java": "#b07219",
@@ -290,7 +290,7 @@ def particles(theme: str, px: float, py: float, size: float) -> str:
     for x, y, light, lx, ly in dots:
         # En claro se imprime como semitono: lo oscuro pesa más.
         weight = light if theme == "dark" else 1 - light
-        r = 0.5 + weight ** 1.4 * 1.45
+        r = 0.25 + weight ** 1.4 * 1.45
         level = min(levels - 1, int(weight * levels))
         angle = rng.uniform(0, math.tau)
         dist = rng.uniform(80, 260)
@@ -300,7 +300,7 @@ def particles(theme: str, px: float, py: float, size: float) -> str:
         out.append(
             f'<circle cx="{px + x * size:.1f}" cy="{py + y * size:.1f}" r="{r:.2f}" class="{cls} c{level}" '
             f'style="--dx:{math.cos(angle) * dist:.0f}px;--dy:{math.sin(angle) * dist:.0f}px;'
-            f'--mx:{(lx - x) * size:.1f}px;--my:{(ly - y) * size:.1f}px;'
+            f'--mx:{(lx - x) * size:.0f}px;--my:{(ly - y) * size:.0f}px;'
             f'animation-delay:{delay:.2f}s,{4.2 + wave:.2f}s"/>'
         )
     return "".join(out)
@@ -566,20 +566,18 @@ def make_avatars() -> None:
             r, g, b = pixels[x, y]
             mp[x, y] = 255 if g - max(r, b) < 9 else 0
     mask = mask.filter(ImageFilter.MedianFilter(7)).filter(ImageFilter.MaxFilter(3)).load()
-    gray = ImageOps.autocontrast(ImageOps.grayscale(photo), cutoff=2).load()
+    gray = ImageOps.autocontrast(ImageOps.grayscale(photo), cutoff=1).filter(ImageFilter.GaussianBlur(1)).load()
 
     rng = random.Random(11)
-    face, grid = [], 50
+    face, grid = [], 72
     step = w / grid
     for gy in range(grid):
         for gx in range(grid):
-            x = min(w - 1, (gx + 0.5 + rng.uniform(-0.3, 0.3)) * step)
-            y = min(h - 1, (gy + 0.5 + rng.uniform(-0.3, 0.3)) * step)
+            x = min(w - 1, (gx + 0.5 + rng.uniform(-0.25, 0.25)) * step)
+            y = min(h - 1, (gy + 0.5 + rng.uniform(-0.25, 0.25)) * step)
             if not mask[int(x), int(y)]:
                 continue
-            light = gray[int(x), int(y)] / 255
-            if rng.random() < 0.6 * (1 - light) ** 2:  # las sombras quedan menos densas
-                continue
+            light = (gray[int(x), int(y)] / 255) ** 1.15
             face.append((x / w, y / h, light))
 
     # "C" geométrica: anillo abierto a la derecha, muestreado en rejilla uniforme.
