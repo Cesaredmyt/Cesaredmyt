@@ -422,7 +422,7 @@ text{{font-family:{MONO};font-size:14.5px;white-space:pre}}
 </g>
 <rect x="{px}" y="{py}" width="{ps}" height="{ps}" rx="14" fill="none" stroke="{t["border"]}"/>
 <path d="M{px - 8} {py + 22}V{py - 8}H{px + 22}M{px + ps - 22} {py - 8}H{px + ps + 8}V{py + 22}M{px + ps + 8} {py + ps - 22}V{py + ps + 8}H{px + ps - 22}M{px + 22} {py + ps + 8}H{px - 8}V{py + ps - 22}" fill="none" stroke="{t["accent"]}" stroke-width="2" stroke-linecap="round"/>
-<text x="{px}" y="{py + ps + 40}" fill="{t["text"]}" style="font-family:{SANS};font-size:19px;font-weight:700">César Díaz Maldonado</text>
+<text x="{px}" y="{py + ps + 40}" fill="{t["text"]}" style="font-family:{SANS};font-size:19px;font-weight:700">Cesaredmyt</text>
 <text x="{px}" y="{py + ps + 62}" fill="{t["dim"]}" style="font-size:12px">Morelia, MX · 19.70°N 101.19°W</text>
 <circle cx="{px + 6}" cy="{py + ps + 84}" r="4" fill="{t["accent"]}"/><circle class="pulse" cx="{px + 6}" cy="{py + ps + 84}" r="4" fill="{t["accent"]}"/>
 <text x="{px + 18}" y="{py + ps + 88}" fill="{t["accent"]}" style="font-size:12px">available · backend / full stack</text>
