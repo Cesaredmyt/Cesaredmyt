@@ -1,25 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="206" viewBox="0 0 480 206" role="img" aria-label="Kuni">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="334" viewBox="0 0 480 334" role="img" aria-label="Kuni">
 <title>Kuni</title>
 <style>
 text{font-family:'Space Grotesk','Segoe UI',Ubuntu,'Helvetica Neue',sans-serif;fill:#0f172a}
-.tx{font-size:12.5px;fill:#64748b}
+.tx{font-size:11.2px;fill:#0f172a}
 .sub{font-family:'JetBrains Mono','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace;font-size:11px;fill:#64748b}
-.val{font-family:'JetBrains Mono','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace;font-size:11.5px;font-weight:700}
+.val{font-family:'JetBrains Mono','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace;font-size:12px;font-weight:700;fill:#059669}
+.section{font-family:'JetBrains Mono','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace;font-size:9.5px;font-weight:700;letter-spacing:1.5px;fill:#64748b}
 .chip{font-family:'JetBrains Mono','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace;font-size:10.5px;fill:#059669}
+.flow{font-family:'JetBrains Mono','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace;font-size:9px;font-weight:700;fill:#0f172a}
+.arrow{font-family:'JetBrains Mono','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace;font-size:13px;fill:#cbd5e1}
 .card{opacity:0;animation:up .6s ease-out forwards}
 @keyframes up{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-.ring{animation:rg 1.4s .35s cubic-bezier(.2,.8,.2,1) forwards}
-@keyframes rg{to{stroke-dashoffset:93.8}}
+.fade{opacity:0;animation:fd .5s ease-out forwards}
+@keyframes fd{to{opacity:1}}
 .glow{animation:gl 3.5s ease-in-out infinite}
 @keyframes gl{0%,100%{opacity:.35}50%{opacity:1}}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important}.ring{stroke-dashoffset:93.8}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important}}
 </style>
 <defs>
 <linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#059669" stop-opacity=".6"/><stop offset=".45" stop-color="#e2e8f0"/><stop offset="1" stop-color="#4f46e5" stop-opacity=".6"/></linearGradient>
 <linearGradient id="i" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#059669"/><stop offset="1" stop-color="#0284c7"/></linearGradient>
+<radialGradient id="g"><stop offset="0" stop-color="#059669" stop-opacity=".13"/><stop offset="1" stop-color="#059669" stop-opacity="0"/></radialGradient>
 </defs>
 <g class="card">
-<rect x=".75" y=".75" width="478.5" height="204.5" rx="14" fill="#ffffff" stroke="url(#b)" stroke-width="1.5"/>
+<rect x=".75" y=".75" width="478.5" height="332.5" rx="14" fill="#ffffff" stroke="url(#b)" stroke-width="1.5"/>
+<circle cx="425" cy="82" r="100" fill="url(#g)"/>
+<circle cx="193.8" cy="104.0" r="0.8" fill="#94a3b8" opacity="0.35" class="tw" style="animation-delay:1.74s"/><circle cx="126.3" cy="313.3" r="1.0" fill="#94a3b8" opacity="0.43"/><circle cx="312.1" cy="78.0" r="0.8" fill="#94a3b8" opacity="0.35"/><circle cx="438.3" cy="332.1" r="0.5" fill="#94a3b8" opacity="0.43"/><circle cx="288.3" cy="259.7" r="0.8" fill="#94a3b8" opacity="0.24"/><circle cx="330.9" cy="40.8" r="0.8" fill="#94a3b8" opacity="0.21"/><circle cx="338.2" cy="261.3" r="0.8" fill="#94a3b8" opacity="0.44" class="tw" style="animation-delay:2.51s"/><circle cx="57.6" cy="154.4" r="0.8" fill="#94a3b8" opacity="0.26"/><circle cx="411.2" cy="35.5" r="1.2" fill="#94a3b8" opacity="0.27"/><circle cx="474.3" cy="2.8" r="0.6" fill="#94a3b8" opacity="0.30"/><circle cx="398.0" cy="240.3" r="0.6" fill="#94a3b8" opacity="0.40"/><circle cx="66.7" cy="119.4" r="1.0" fill="#94a3b8" opacity="0.21"/><circle cx="116.1" cy="271.5" r="0.5" fill="#94a3b8" opacity="0.40" class="tw" style="animation-delay:0.80s"/><circle cx="108.9" cy="210.8" r="0.5" fill="#94a3b8" opacity="0.23"/><circle cx="330.0" cy="32.0" r="0.5" fill="#94a3b8" opacity="0.36"/><circle cx="274.2" cy="255.4" r="0.6" fill="#94a3b8" opacity="0.33"/><circle cx="131.8" cy="213.2" r="0.6" fill="#94a3b8" opacity="0.25"/><circle cx="24.7" cy="146.8" r="0.8" fill="#94a3b8" opacity="0.26"/>
 <circle cx="22" cy="20" r="3" fill="#059669" class="glow"/>
 <text x="32" y="24" class="sub">cesaredmyt/kuni</text>
 <line x1="1" y1="36.5" x2="479" y2="36.5" stroke="#e2e8f0"/>
@@ -27,14 +33,16 @@ text{font-family:'Space Grotesk','Segoe UI',Ubuntu,'Helvetica Neue',sans-serif;f
 <text x="43" y="78" text-anchor="middle" style="font-size:20px;font-weight:700;fill:#f8fafc">K</text>
 <text x="76" y="68" style="font-size:17px;font-weight:700">Kuni</text>
 <text x="76" y="86" class="sub">Innovation Fest 2026 · hackathon</text>
-<text x="22" y="120" class="tx">Clinic appointment platform with</text><text x="22" y="138" class="tx">WhatsApp/SMS reminders, signed webhooks and</text><text x="22" y="156" class="tx">row-level security per clinic.</text>
-<rect x="22" y="172" width="64" height="20" rx="10" fill="#059669" fill-opacity=".12" stroke="#059669" stroke-opacity=".35"/><text x="54" y="186" class="chip" text-anchor="middle">Next.js</text><rect x="92" y="172" width="84" height="20" rx="10" fill="#059669" fill-opacity=".12" stroke="#059669" stroke-opacity=".35"/><text x="134" y="186" class="chip" text-anchor="middle">PostgreSQL</text><rect x="182" y="172" width="58" height="20" rx="10" fill="#059669" fill-opacity=".12" stroke="#059669" stroke-opacity=".35"/><text x="211" y="186" class="chip" text-anchor="middle">Twilio</text>
-<line x1="308" y1="52" x2="308" y2="152" stroke="#e2e8f0"/>
-<text x="322" y="72" class="sub">Commits</text><text x="396" y="72" class="val" text-anchor="end">42</text><text x="322" y="94" class="sub">Team</text><text x="396" y="94" class="val" text-anchor="end">3</text><text x="322" y="116" class="sub">Rank</text><text x="396" y="116" class="val" text-anchor="end">#1</text>
-<circle cx="440" cy="92" r="27" fill="none" stroke="#e2e8f0" stroke-width="5"/>
-<circle cx="440" cy="92" r="27" fill="none" stroke="#059669" stroke-width="5" stroke-linecap="round" stroke-dasharray="169.6" stroke-dashoffset="169.6" transform="rotate(-90 440 92)" class="ring"/>
-<text x="440" y="97" text-anchor="middle" style="font-size:14px;font-weight:700;fill:#059669">45%</text>
-<text x="440" y="138" text-anchor="middle" class="sub">of commits</text>
-<text x="458" y="186" text-anchor="end" class="sub">updated 11 days ago</text>
+<line x1="22" y1="104.5" x2="458" y2="104.5" stroke="#e2e8f0"/>
+<text x="22" y="127" class="section">MY CONTRIBUTION</text>
+<g class="fade" style="animation-delay:0.28s"><circle cx="27" cy="153" r="3" fill="#059669"/><text x="39" y="157" class="tx">Built a 20-table PostgreSQL model + 6 views</text></g><g class="fade" style="animation-delay:0.37s"><circle cx="27" cy="176" r="3" fill="#059669"/><text x="39" y="180" class="tx">Implemented RLS and signed Twilio webhooks</text></g><g class="fade" style="animation-delay:0.46s"><circle cx="27" cy="199" r="3" fill="#059669"/><text x="39" y="203" class="tx">Connected the reminder outbox to WhatsApp/SMS</text></g>
+<line x1="314" y1="117" x2="314" y2="204" stroke="#e2e8f0"/>
+<text x="330" y="127" class="section">PROJECT SIGNAL</text>
+<g class="fade" style="animation-delay:0.34s"><text x="330" y="153" class="sub">Tables</text><text x="458" y="153" class="val" text-anchor="end">20</text></g><g class="fade" style="animation-delay:0.43s"><text x="330" y="176" class="sub">SQL views</text><text x="458" y="176" class="val" text-anchor="end">6</text></g><g class="fade" style="animation-delay:0.52s"><text x="330" y="199" class="sub">Demo</text><text x="458" y="199" class="val" text-anchor="end">E2E</text></g>
+<line x1="22" y1="218.5" x2="458" y2="218.5" stroke="#e2e8f0"/>
+<text x="22" y="238" class="section">SYSTEM FLOW</text>
+<g class="fade" style="animation-delay:0.62s"><rect x="22" y="246" width="62" height="25" rx="12.5" fill="#059669" fill-opacity=".09" stroke="#059669" stroke-opacity=".35"/><circle cx="34" cy="258.5" r="2.5" fill="#059669"/><text x="44" y="262" class="flow">ENROLL</text></g><text x="92" y="263" class="arrow">→</text><g class="fade" style="animation-delay:0.70s"><rect x="112" y="246" width="62" height="25" rx="12.5" fill="#059669" fill-opacity=".09" stroke="#059669" stroke-opacity=".35"/><circle cx="124" cy="258.5" r="2.5" fill="#059669"/><text x="134" y="262" class="flow">REMIND</text></g><text x="182" y="263" class="arrow">→</text><g class="fade" style="animation-delay:0.78s"><rect x="202" y="246" width="56" height="25" rx="12.5" fill="#059669" fill-opacity=".09" stroke="#059669" stroke-opacity=".35"/><circle cx="214" cy="258.5" r="2.5" fill="#059669"/><text x="224" y="262" class="flow">ALERT</text></g><text x="265" y="263" class="arrow">→</text><g class="fade" style="animation-delay:0.86s"><rect x="285" y="246" width="62" height="25" rx="12.5" fill="#059669" fill-opacity=".09" stroke="#059669" stroke-opacity=".35"/><circle cx="297" cy="258.5" r="2.5" fill="#059669"/><text x="307" y="262" class="flow">REVIEW</text></g>
+<rect x="22" y="286" width="64" height="20" rx="10" fill="#059669" fill-opacity=".12" stroke="#059669" stroke-opacity=".35"/><text x="54" y="300" class="chip" text-anchor="middle">Next.js</text><rect x="92" y="286" width="84" height="20" rx="10" fill="#059669" fill-opacity=".12" stroke="#059669" stroke-opacity=".35"/><text x="134" y="300" class="chip" text-anchor="middle">PostgreSQL</text><rect x="182" y="286" width="58" height="20" rx="10" fill="#059669" fill-opacity=".12" stroke="#059669" stroke-opacity=".35"/><text x="211" y="300" class="chip" text-anchor="middle">Twilio</text>
+<text x="458" y="321" text-anchor="end" class="sub">42 commits · #1 contributor · updated 8 days ago</text>
 </g>
 </svg>

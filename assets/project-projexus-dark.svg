@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="334" viewBox="0 0 480 334" role="img" aria-label="ProjeXus">
+<title>ProjeXus</title>
+<style>
+text{font-family:'Space Grotesk','Segoe UI',Ubuntu,'Helvetica Neue',sans-serif;fill:#e5e7eb}
+.tx{font-size:11.2px;fill:#e5e7eb}
+.sub{font-family:'JetBrains Mono','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace;font-size:11px;fill:#6b7280}
+.val{font-family:'JetBrains Mono','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace;font-size:12px;font-weight:700;fill:#34d399}
+.section{font-family:'JetBrains Mono','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace;font-size:9.5px;font-weight:700;letter-spacing:1.5px;fill:#6b7280}
+.chip{font-family:'JetBrains Mono','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace;font-size:10.5px;fill:#34d399}
+.flow{font-family:'JetBrains Mono','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace;font-size:9px;font-weight:700;fill:#e5e7eb}
+.arrow{font-family:'JetBrains Mono','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace;font-size:13px;fill:#374151}
+.card{opacity:0;animation:up .6s ease-out forwards}
+@keyframes up{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.fade{opacity:0;animation:fd .5s ease-out forwards}
+@keyframes fd{to{opacity:1}}
+.glow{animation:gl 3.5s ease-in-out infinite}
+@keyframes gl{0%,100%{opacity:.35}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important}}
+</style>
+<defs>
+<linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34d399" stop-opacity=".6"/><stop offset=".45" stop-color="#1f2937"/><stop offset="1" stop-color="#818cf8" stop-opacity=".6"/></linearGradient>
+<linearGradient id="i" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#38bdf8"/></linearGradient>
+<radialGradient id="g"><stop offset="0" stop-color="#34d399" stop-opacity=".13"/><stop offset="1" stop-color="#34d399" stop-opacity="0"/></radialGradient>
+</defs>
+<g class="card">
+<rect x=".75" y=".75" width="478.5" height="332.5" rx="14" fill="#0a0f1c" stroke="url(#b)" stroke-width="1.5"/>
+<circle cx="425" cy="82" r="100" fill="url(#g)"/>
+<circle cx="95.4" cy="38.6" r="0.8" fill="#e5e7eb" opacity="0.46" class="tw" style="animation-delay:2.74s"/><circle cx="48.0" cy="262.2" r="0.8" fill="#e5e7eb" opacity="0.50"/><circle cx="52.5" cy="119.3" r="0.8" fill="#e5e7eb" opacity="0.33"/><circle cx="2.6" cy="212.1" r="0.6" fill="#e5e7eb" opacity="0.20"/><circle cx="25.1" cy="313.6" r="1.2" fill="#e5e7eb" opacity="0.39"/><circle cx="260.5" cy="101.1" r="0.5" fill="#e5e7eb" opacity="0.40"/><circle cx="224.7" cy="133.9" r="0.6" fill="#e5e7eb" opacity="0.47" class="tw" style="animation-delay:3.76s"/><circle cx="10.7" cy="83.7" r="1.0" fill="#e5e7eb" opacity="0.34"/><circle cx="452.0" cy="55.6" r="0.5" fill="#e5e7eb" opacity="0.37"/><circle cx="373.9" cy="166.6" r="1.0" fill="#e5e7eb" opacity="0.26"/><circle cx="133.3" cy="293.8" r="0.8" fill="#e5e7eb" opacity="0.48"/><circle cx="136.6" cy="269.4" r="1.2" fill="#e5e7eb" opacity="0.53"/><circle cx="394.3" cy="172.7" r="0.8" fill="#e5e7eb" opacity="0.15" class="tw" style="animation-delay:1.72s"/><circle cx="341.7" cy="294.7" r="0.8" fill="#e5e7eb" opacity="0.44"/><circle cx="343.0" cy="167.9" r="1.2" fill="#e5e7eb" opacity="0.37"/><circle cx="112.9" cy="90.2" r="0.6" fill="#e5e7eb" opacity="0.43"/><circle cx="408.7" cy="330.9" r="0.5" fill="#e5e7eb" opacity="0.36"/><circle cx="220.7" cy="42.7" r="1.0" fill="#e5e7eb" opacity="0.42"/>
+<circle cx="22" cy="20" r="3" fill="#34d399" class="glow"/>
+<text x="32" y="24" class="sub">tonymed12/projexus</text>
+<line x1="1" y1="36.5" x2="479" y2="36.5" stroke="#1f2937"/>
+<rect x="22" y="50" width="42" height="42" rx="11" fill="url(#i)"/>
+<text x="43" y="78" text-anchor="middle" style="font-size:20px;font-weight:700;fill:#030712">P</text>
+<text x="76" y="68" style="font-size:17px;font-weight:700">ProjeXus</text>
+<text x="76" y="86" class="sub">Backend developer · 2025</text>
+<line x1="22" y1="104.5" x2="458" y2="104.5" stroke="#1f2937"/>
+<text x="22" y="127" class="section">MY CONTRIBUTION</text>
+<g class="fade" style="animation-delay:0.28s"><circle cx="27" cy="153" r="3" fill="#34d399"/><text x="39" y="157" class="tx">Developed the Spring Boot REST backend</text></g><g class="fade" style="animation-delay:0.37s"><circle cx="27" cy="176" r="3" fill="#34d399"/><text x="39" y="180" class="tx">Designed the PostgreSQL relational model</text></g><g class="fade" style="animation-delay:0.46s"><circle cx="27" cy="199" r="3" fill="#34d399"/><text x="39" y="203" class="tx">Unified registration, judging and result workflows</text></g>
+<line x1="314" y1="117" x2="314" y2="204" stroke="#1f2937"/>
+<text x="330" y="127" class="section">PROJECT SIGNAL</text>
+<g class="fade" style="animation-delay:0.34s"><text x="330" y="153" class="sub">Role</text><text x="458" y="153" class="val" text-anchor="end">BACKEND</text></g><g class="fade" style="animation-delay:0.43s"><text x="330" y="176" class="sub">API</text><text x="458" y="176" class="val" text-anchor="end">REST</text></g><g class="fade" style="animation-delay:0.52s"><text x="330" y="199" class="sub">Delivery</text><text x="458" y="199" class="val" text-anchor="end">E2E</text></g>
+<line x1="22" y1="218.5" x2="458" y2="218.5" stroke="#1f2937"/>
+<text x="22" y="238" class="section">SYSTEM FLOW</text>
+<g class="fade" style="animation-delay:0.62s"><rect x="22" y="246" width="74" height="25" rx="12.5" fill="#34d399" fill-opacity=".09" stroke="#34d399" stroke-opacity=".35"/><circle cx="34" cy="258.5" r="2.5" fill="#34d399"/><text x="44" y="262" class="flow">REGISTER</text></g><text x="104" y="263" class="arrow">→</text><g class="fade" style="animation-delay:0.70s"><rect x="124" y="246" width="74" height="25" rx="12.5" fill="#34d399" fill-opacity=".09" stroke="#34d399" stroke-opacity=".35"/><circle cx="136" cy="258.5" r="2.5" fill="#34d399"/><text x="146" y="262" class="flow">EVALUATE</text></g><text x="207" y="263" class="arrow">→</text><g class="fade" style="animation-delay:0.78s"><rect x="227" y="246" width="68" height="25" rx="12.5" fill="#34d399" fill-opacity=".09" stroke="#34d399" stroke-opacity=".35"/><circle cx="239" cy="258.5" r="2.5" fill="#34d399"/><text x="249" y="262" class="flow">RESULTS</text></g>
+<rect x="22" y="286" width="91" height="20" rx="10" fill="#34d399" fill-opacity=".12" stroke="#34d399" stroke-opacity=".35"/><text x="67" y="300" class="chip" text-anchor="middle">Spring Boot</text><rect x="119" y="286" width="84" height="20" rx="10" fill="#34d399" fill-opacity=".12" stroke="#34d399" stroke-opacity=".35"/><text x="161" y="300" class="chip" text-anchor="middle">PostgreSQL</text><rect x="209" y="286" width="64" height="20" rx="10" fill="#34d399" fill-opacity=".12" stroke="#34d399" stroke-opacity=".35"/><text x="241" y="300" class="chip" text-anchor="middle">Next.js</text>
+<text x="458" y="321" text-anchor="end" class="sub">24 commits · #3 contributor · updated 15 months ago</text>
+</g>
+</svg>
