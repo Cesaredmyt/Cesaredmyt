@@ -571,17 +571,17 @@ def overview_svg(theme: str) -> str:
     ]
     pillar_rows = []
     for i, (title, detail, color) in enumerate(pillars):
-        y = 112 + i * 50
+        y = 138 + i * 48
         pillar_rows.append(
-            f'<rect x="21" y="{y - 18}" width="4" height="32" rx="2" fill="{color}"/>'
-            f'<circle cx="42" cy="{y - 2}" r="11" fill="{color}" fill-opacity=".12" stroke="{color}" stroke-opacity=".45"/>'
-            f'<circle cx="42" cy="{y - 2}" r="3.5" fill="{color}"/>'
-            f'<text x="62" y="{y - 5}" class="title">{esc(title)}</text>'
-            f'<text x="62" y="{y + 12}" class="sub">{esc(detail)}</text>'
+            f'<rect x="32" y="{y - 18}" width="4" height="32" rx="2" fill="{color}"/>'
+            f'<circle cx="53" cy="{y - 2}" r="11" fill="{color}" fill-opacity=".12" stroke="{color}" stroke-opacity=".45"/>'
+            f'<circle cx="53" cy="{y - 2}" r="3.5" fill="{color}"/>'
+            f'<text x="73" y="{y - 5}" class="title">{esc(title)}</text>'
+            f'<text x="73" y="{y + 12}" class="sub">{esc(detail)}</text>'
         )
     pillar_rows.append(
-        f'<text x="21" y="278" class="copy">Backend-first products, connected</text>'
-        f'<text x="21" y="297" class="copy">to useful interfaces and reliable infra.</text>'
+        f'<text x="32" y="282" class="copy">Backend-first products, connected</text>'
+        f'<text x="32" y="301" class="copy">to useful interfaces and reliable infra.</text>'
     )
 
     signals = [
@@ -593,11 +593,11 @@ def overview_svg(theme: str) -> str:
     signal_cells = []
     for i, (value, label, color) in enumerate(signals):
         col, row = i % 2, i // 2
-        x, y = 350 + col * 151, 93 + row * 91
+        x, y = 350 + col * 145, 118 + row * 78
         signal_cells.append(
-            f'<rect x="{x}" y="{y}" width="137" height="76" rx="10" fill="{t["bg"]}" stroke="{color}" stroke-opacity=".28"/>'
-            f'<text x="{x + 14}" y="{y + 37}" class="metric" fill="{color}">{value}</text>'
-            f'<text x="{x + 14}" y="{y + 59}" class="micro">{label}</text>'
+            f'<rect x="{x}" y="{y}" width="133" height="68" rx="10" fill="{t["bg"]}" stroke="{color}" stroke-opacity=".28"/>'
+            f'<text x="{x + 14}" y="{y + 34}" class="metric" fill="{color}">{value}</text>'
+            f'<text x="{x + 14}" y="{y + 54}" class="micro">{label}</text>'
         )
     signal_cells.append(
         f'<text x="350" y="282" class="copy">From product delivery to ML research</text>'
@@ -605,16 +605,16 @@ def overview_svg(theme: str) -> str:
     )
 
     now_body = (
-        f'<circle cx="687" cy="101" r="5" fill="{t["accent"]}" class="pulse"/>'
-        f'<text x="701" y="106" class="title">Available</text>'
-        f'<text x="687" y="127" class="sub">internships · junior roles</text>'
-        f'<text x="687" y="164" class="micro">CERTIFIED</text>'
-        f'<text x="687" y="188" class="title">Google Cloud Engineering</text>'
-        f'<text x="687" y="206" class="sub">Google Cloud · 2026</text>'
-        f'<text x="687" y="232" class="title">Google AI Professional</text>'
-        f'<text x="687" y="250" class="sub">7-course certificate · 2026</text>'
-        f'<text x="687" y="276" class="title">Applied AI · intermediate</text>'
-        f'<text x="687" y="294" class="sub">INFOTEC · 30 hours · 2026</text>'
+        f'<circle cx="685" cy="125" r="5" fill="{t["accent"]}" class="pulse"/>'
+        f'<text x="699" y="130" class="title">Available</text>'
+        f'<text x="680" y="148" class="sub">internships · junior roles</text>'
+        f'<text x="680" y="175" class="micro">CERTIFIED</text>'
+        f'<text x="680" y="197" class="title">Google Cloud Engineering</text>'
+        f'<text x="680" y="213" class="sub">Google Cloud · 2026</text>'
+        f'<text x="680" y="237" class="title">Google AI Professional</text>'
+        f'<text x="680" y="253" class="sub">7-course certificate · 2026</text>'
+        f'<text x="680" y="277" class="title">Applied AI · intermediate</text>'
+        f'<text x="680" y="293" class="sub">INFOTEC · 30 hours · 2026</text>'
     )
 
     flow = [
@@ -666,9 +666,9 @@ text{{font-family:{SANS};fill:{t["text"]}}}
 <circle cx="24" cy="24" r="5.5" fill="{t["red"]}" opacity=".85"/><circle cx="43" cy="24" r="5.5" fill="{t["amber"]}" opacity=".85"/><circle cx="62" cy="24" r="5.5" fill="{t["accent"]}" opacity=".85"/>
 <text x="91" y="28" class="label" fill="{t["text"]}">MISSION CONTROL</text>
 <text x="963" y="28" class="sub" text-anchor="end">portfolio.snapshot()</text>
-{panel(0, 62, 316, 256, "WHAT I BUILD", "01", "".join(pillar_rows))}
-{panel(330, 62, 316, 256, "SIGNAL", "02", "".join(signal_cells))}
-{panel(660, 62, 325, 256, "CURRENT MISSION", "03", now_body)}
+{panel(12, 62, 306, 256, "WHAT I BUILD", "01", "".join(pillar_rows))}
+{panel(330, 62, 318, 256, "SIGNAL", "02", "".join(signal_cells))}
+{panel(660, 62, 313, 256, "CURRENT MISSION", "03", now_body)}
 <text x="21" y="357" class="micro">SYSTEM FLOW</text>
 {"".join(flow_nodes)}
 </svg>
