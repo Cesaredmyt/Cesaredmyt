@@ -585,7 +585,7 @@ def overview_svg(theme: str) -> str:
     )
 
     signals = [
-        ("3", "END-TO-END", t["accent"]),
+        ("1st", "HACKAPONY 2026", t["accent"]),
         ("15+", "SERVICES", t["sky"]),
         ("6.36M", "ROWS ANALYZED", t["indigo"]),
         ("94/100", "ACADEMIC AVG", t["amber"]),
@@ -604,20 +604,17 @@ def overview_svg(theme: str) -> str:
         f'<text x="350" y="301" class="copy">and a self-hosted production lab.</text>'
     )
 
-    progress_w = 238
-    progress = progress_w * .22
     now_body = (
         f'<circle cx="687" cy="101" r="5" fill="{t["accent"]}" class="pulse"/>'
         f'<text x="701" y="106" class="title">Available</text>'
         f'<text x="687" y="127" class="sub">internships · junior roles</text>'
-        f'<text x="687" y="164" class="micro">LEARNING NOW</text>'
-        f'<text x="687" y="187" class="title">Google Cloud Engineering</text>'
-        f'<rect x="687" y="201" width="{progress_w}" height="7" rx="3.5" fill="{t["border"]}"/>'
-        f'<rect x="687" y="201" width="{progress:.1f}" height="7" rx="3.5" fill="{t["sky"]}" class="progress"/>'
-        f'<text x="925" y="223" class="sub" text-anchor="end">22% · Career Launchpad LatAm</text>'
-        f'<text x="687" y="254" class="micro">CERTIFIED</text>'
-        f'<text x="687" y="277" class="title">Google AI Professional</text>'
-        f'<text x="687" y="297" class="sub">7-course certificate · 2026</text>'
+        f'<text x="687" y="164" class="micro">CERTIFIED</text>'
+        f'<text x="687" y="188" class="title">Google Cloud Engineering</text>'
+        f'<text x="687" y="206" class="sub">Google Cloud · 2026</text>'
+        f'<text x="687" y="232" class="title">Google AI Professional</text>'
+        f'<text x="687" y="250" class="sub">7-course certificate · 2026</text>'
+        f'<text x="687" y="276" class="title">Applied AI · intermediate</text>'
+        f'<text x="687" y="294" class="sub">INFOTEC · 30 hours · 2026</text>'
     )
 
     flow = [
@@ -637,7 +634,7 @@ def overview_svg(theme: str) -> str:
             flow_nodes.append(f'<text x="{x + w + 13}" y="358" class="arrow">→</text>')
         x += w + 37
 
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Portfolio overview: backend, data, infrastructure and current learning">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Portfolio overview: backend, data, infrastructure and certifications">
 <title>Portfolio overview · César Díaz</title>
 <style>
 text{{font-family:{SANS};fill:{t["text"]}}}

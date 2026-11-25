@@ -40,10 +40,18 @@
     "people": 2
   },
   "projexus": {
-    "stars": 1,
+    "stars": 0,
     "pushed": "2025-06-03T15:21:55Z",
     "commits": 24,
     "share": 0.19834710743801653,
+    "rank": 3,
+    "people": 4
+  },
+  "rutasegura": {
+    "stars": 0,
+    "pushed": "2026-11-19T22:51:02Z",
+    "commits": 38,
+    "share": 0.20320855614973263,
     "rank": 3,
     "people": 4
   }

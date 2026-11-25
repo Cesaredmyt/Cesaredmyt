@@ -23,20 +23,20 @@
 <sub>Currently focused on API design, relational data modeling, authentication and self-hosted infrastructure.</sub></p>
 
 <a href="https://portfolio-xplq.vercel.app/">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/overview-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/overview-light.svg"><img alt="Portfolio overview — backend, data, infrastructure and current learning" src="assets/overview-dark.svg" width="100%"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/overview-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/overview-light.svg"><img alt="Portfolio overview — backend, data, infrastructure and certifications" src="assets/overview-dark.svg" width="100%"></picture>
 </a>
 
 <h3>Selected work</h3>
 <p><sub>Products, research and infrastructure — each card shows my direct contribution, system flow and measurable signal.</sub></p>
 
+<a href="https://github.com/Cesaredmyt/Hackapony"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-rutasegura-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/project-rutasegura-light.svg"><img alt="RutaSegura ITM" src="assets/project-rutasegura-dark.svg" width="49%"></picture></a>
 <a href="https://github.com/Cesaredmyt/Kuni"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-kuni-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/project-kuni-light.svg"><img alt="Kuni" src="assets/project-kuni-dark.svg" width="49%"></picture></a>
+<br>
 <a href="https://github.com/Cesaredmyt/Adopciones-IMPA"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-impa-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/project-impa-light.svg"><img alt="IMPA Adopciones" src="assets/project-impa-dark.svg" width="49%"></picture></a>
-<br>
 <a href="https://github.com/Cesaredmyt/fraud-detection-itm"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-fraud-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/project-fraud-light.svg"><img alt="Fraud Detection" src="assets/project-fraud-dark.svg" width="49%"></picture></a>
-<a href="https://portfolio-xplq.vercel.app/#homelab"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-homelab-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/project-homelab-light.svg"><img alt="Home Lab" src="assets/project-homelab-dark.svg" width="49%"></picture></a>
 <br>
-<a href="https://github.com/TonyMed12/ProjeXus"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-projexus-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/project-projexus-light.svg"><img alt="ProjeXus" src="assets/project-projexus-dark.svg" width="49%"></picture></a>
-<a href="https://github.com/Cesaredmyt/Aquamarine-Resort"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-aquamarine-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/project-aquamarine-light.svg"><img alt="Aquamarine Resort" src="assets/project-aquamarine-dark.svg" width="49%"></picture></a>
+<a href="https://portfolio-xplq.vercel.app/#homelab"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-homelab-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/project-homelab-light.svg"><img alt="Home Lab" src="assets/project-homelab-dark.svg" width="49%"></picture></a>
+<a href="https://github.com/Cesaredmyt/ProjeXus"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-projexus-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/project-projexus-light.svg"><img alt="ProjeXus" src="assets/project-projexus-dark.svg" width="49%"></picture></a>
 
 <h3>GitHub activity</h3>
 
